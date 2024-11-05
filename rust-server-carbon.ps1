@@ -7,12 +7,12 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 }
 
 # Global Variables    
-$ServerDir = ""
+$ServerDir = "C:\rust_server"
 $SteamCmdDir = "$ServerDir\steamcmd"
 $SteamAppId = "258550"
-$CarbonZipPath = ""  # Local path to Carbon file
+$CarbonZipPath = "C:\Users\akex\Documents\Rustserver_win10_build-main\Carbon.Windows.Release.zip"  # Local path to Carbon file
 $MiniUPnPCPath = "C:\miniupnpc\upnpc-static.exe"
-$LocalIP = "" # Adjust to your configuration
+$LocalIP = "192.168.1.115" # Adjust to your configuration
 
 # Check for miniUPnP existence
 if (-not (Test-Path $MiniUPnPCPath)) {
