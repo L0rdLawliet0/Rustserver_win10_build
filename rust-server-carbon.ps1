@@ -7,10 +7,10 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 }
 
 # Global Variables    
-$ServerDir = "C:\rust_server"
+$ServerDir = "C:\Users\akex\Documents\instance 1"
 $SteamCmdDir = "$ServerDir\steamcmd"
 $SteamAppId = "258550"
-$CarbonZipPath = "C:\Users\akex\Documents\Rustserver_win10_build-main\Carbon.Windows.Release.zip"  # Local path to Carbon file
+$CarbonZipPath = "C:\Users\akex\Documents\script_rust_server\Carbon.Windows.Release.zip"  # Local path to Carbon file
 $MiniUPnPCPath = "C:\miniupnpc\upnpc-static.exe"
 $LocalIP = "192.168.1.115" # Adjust to your configuration
 
@@ -97,7 +97,8 @@ $ports = @(
     @{Port = 22220; Protocol = "TCP"; Description = "Game Port"},
     @{Port = 22222; Protocol = "TCP"; Description = "RCON Port"},
     @{Port = 27015; Protocol = "UDP"; Description = "Steam Port"},
-    @{Port = 22288; Protocol = "TCP"; Description = "Rust+ Port"}
+    @{Port = 22288; Protocol = "TCP"; Description = "Rust+ Port"},
+    @{Port = 22223; Protocol = "UDP"; Description = "Additional Port"}
 )
 
 # Network Configuration
